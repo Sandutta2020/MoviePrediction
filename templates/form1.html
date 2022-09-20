@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Prediction</title>
+</head>
+<body>
+<h2> Similar movie prediction </h3>
+<form action="/render" method="post" >
+<table> <tr> <th>
+	<label for="Movie_choice">Please Enter a Movie Name :</label> </th>
+    <td>
+     <select id ="category_id" name="category_id">   
+        {% for movie in movies%}
+            {% if Res==movie %}
+            <option name="{{movie}}" value="{{movie}}" selected>{{ movie}}</option>
+            {% endif %}
+            <option name="{{movie}}" value="{{movie}}">{{ movie}}</option>
+        {% endfor %}
+     </select>
+    
+    </td></tr>
+<tr><td><input type="submit"></td></tr>
+</table>
+</form>
+<p>You have selected : {{ Res }}</p>
+<p> The Similar Movies are </p>
+{{ rec_movies |safe }}
+</body>
+</html>
