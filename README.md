@@ -22,9 +22,15 @@ The matrix will be like
 <br> 
 index------  | Top Gun | Terminator|<br>
 -------------|---------|------------<br>
-Top Gun      |    0    |   .25|<br>
+Top Gun      |    0    |   .25     |<br>
 -------------|---------|------------<br>
-Terminator   |   .5    |    0<br>|
+Terminator   |   .5    |    0      |<br>
 ------------------------------------<br>
+
+<table>
+<tr><th>index</tr><th> Top Gun </th><th>Terminator</th></tr>
+<tr><td>Top Gun</tr><td> 0</td><td>.25</td></tr>
+<tr><td>Terminator</tr><td> .5 </td><td>0</td></tr>
+</table>
 
 when user select any movies we sort this based on similarity and return.
