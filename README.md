@@ -21,10 +21,10 @@ consider we have 2 movies
 The matrix will be like 
 <br> 
 index------  | Top Gun | Terminator|<br>
-             ----------------------<br>
+-------------|---------|------------<br>
 Top Gun      |    0    |   .25|<br>
-           ------------------------<br>
-Terminator   |   .5     |    0<br>|
-          -------------------------<br>
+-------------|---------|------------<br>
+Terminator   |   .5    |    0<br>|
+------------------------------------<br>
 
 when user select any movies we sort this based on similarity and return.
