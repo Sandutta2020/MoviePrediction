@@ -19,7 +19,7 @@ consider we have 2 movies
 2) Terminator
 
 The matrix will be like 
-          | Top Gun | Terminator|<br>
+          <br>| Top Gun | Terminator|<br>
           ----------------------<br>
 Top Gun   |    0    |   .25<br>
            ---------------------<br>
