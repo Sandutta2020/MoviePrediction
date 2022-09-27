@@ -19,14 +19,6 @@ consider we have 2 movies
 2) Terminator
 
 The matrix will be like 
-<br> 
-index------  | Top Gun | Terminator|<br>
--------------|---------|------------<br>
-Top Gun      |    0    |   .25     |<br>
--------------|---------|------------<br>
-Terminator   |   .5    |    0      |<br>
-------------------------------------<br>
-
 <table>
 <tr><th>index</th><th> Top Gun </th><th>Terminator</th></tr>
 <tr><td>Top Gun</td><td> 0</td><td>.25</td></tr>
