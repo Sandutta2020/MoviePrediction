@@ -2,12 +2,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Movie Prediction</title>
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
 </head>
 <body>
-<h2> Similar movie prediction </h3>
+<center><h2> Similar movie prediction </h3></center>
 <form action="/render" method="post" >
 <table> <tr> <th>
-	<label for="Movie_choice">Please Enter a Movie Name :</label> </th>
+	<label for="Movie_choice">Please Select a Movie from List :</label> </th>
     <td>
      <select id ="category_id" name="category_id">   
         {% for movie in movies%}
