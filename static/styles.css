@@ -1,3 +1,28 @@
 h2 {
     color: rgb(128, 87, 0);
 }
+#List_movies
+{
+    border: 1px ;
+    color: blue;
+    font-size: 13px; 
+}
+
+select
+{
+    color: blue;
+    font-size: 13px; 
+}
+
+tr{
+    text-align: left;
+}
+
+#result_movies
+{
+    border: 1px ;
+    border-color: black;
+    text-decoration-color: blue;
+    font-size: 14px;
+    color: rgb(53, 4, 34); 
+}

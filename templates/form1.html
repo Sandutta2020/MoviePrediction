@@ -1,13 +1,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Movie Prediction</title>
+    <title>Similar Movie Prediction by fastapi demo</title>
     <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
 </head>
 <body>
-<center><h2> Similar movie prediction </h3></center>
+<center><h2> Similar Movie prediction </h2>
 <form action="/render" method="post" >
-<table> <tr> <th>
+<table id="List_movies"> <tr> <th>
 	<label for="Movie_choice">Please Select a Movie from List :</label> </th>
     <td>
      <select id ="category_id" name="category_id">   
@@ -19,12 +19,13 @@
         {% endfor %}
      </select>
     
-    </td></tr>
-<tr><td><input type="submit"></td></tr>
+    </td><td>
+<input type="submit"></td></tr>
 </table>
 </form>
 <p>You have selected : {{ Res }}</p>
 <p> The Similar Movies are </p>
 {{ rec_movies |safe }}
+</center>
 </body>
 </html>

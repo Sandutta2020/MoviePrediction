@@ -30,7 +30,10 @@ async def get_webpage(request: Request):
 async def render(request: Request, category_id: str = Form(...)):
     # print(category_id)
     df_movies = getting_recommended_movie(category_id)
-    # print(df_movies)
+    df_movies.reset_index(inplace=True)
+    df_movies['Similar Movies'] =df_movies['Title'] + '--------- ' + df_movies['SearchType']
+    df_movies=df_movies[['Similar Movies']]
+    #print(df_movies.to_html())
     return templates.TemplateResponse(
         "form1.html",
         context={
@@ -38,7 +41,7 @@ async def render(request: Request, category_id: str = Form(...)):
             "Res": category_id,
             "movies": lst,
             "rec_movies": df_movies.head(movie_config['Result_size']).to_html(
-                border=1, index=True, show_dimensions=True
+                border=1, index=False,table_id="result_movies"
             ),
         },
     )

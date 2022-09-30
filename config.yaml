@@ -1,5 +1,5 @@
 Movie_details:
-    Default_list_size :    5
+    Default_list_size :    7
     Default_font_size :   10
     Result_size :   12
     Movie_list_dropdown :    ["American Beauty (1999)",
@@ -10,4 +10,6 @@ Movie_details:
                               "Back to the Future (1985)",
                               "Silence of the Lambs, The (1991)",
                               "Braveheart (1995)",
-                              "Schindler's List (1993)"]
+                              "Schindler's List (1993)",
+                              "Dog Park (1998)",
+                              "Superman (1978)"]
