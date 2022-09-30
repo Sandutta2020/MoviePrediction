@@ -45,3 +45,4 @@ virtualenv==20.4.2
 websockets==8.1
 wincertstore==0.2
 zipp==3.8.1
+PyYAML==5.3.1

@@ -1,0 +1,13 @@
+Movie_details:
+    Default_list_size :    5
+    Default_font_size :   10
+    Result_size :   12
+    Movie_list_dropdown :    ["American Beauty (1999)",
+                              "Star Wars: Episode IV - A New Hope (1977)",
+                              "Jurassic Park (1993)",
+                              "Saving Private Ryan (1998)",
+                              "Terminator 2: Judgment Day (1991)",
+                              "Back to the Future (1985)",
+                              "Silence of the Lambs, The (1991)",
+                              "Braveheart (1995)",
+                              "Schindler's List (1993)"]
