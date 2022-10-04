@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Similar Movie Prediction by fastapi demo</title>
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="{{ url_for('static', path='/on_change.js') }}"></script>
+</head>
+<body>
+<center><h2> Similar Movie Prediction </h2>
+<form action="/render" method="post" >
+<table id="List_movies"> <tr> <th>
+	<label for="Movie_choice">Genre :</label> </th>
+    <td>
+     <select class="form-control" id ="category_id" name="category_id">   
+        {% for movie in movies%}
+            {% if Res==movie %}
+                <option name="{{movie}}" value="{{movie}}" selected>{{ movie}}</option>
+            {% endif %}
+                <option name="{{movie}}" value="{{movie}}">{{ movie}}</option>
+        {% endfor %}
+     </select>
+     <br>
+     <select class="form-control" id ="movie_id" name="movie_id">   
+        {% for items in movie_list%}
+            {% if selected_movies==items[1] %}
+                <option name="{{items[0]}}" value="{{items[1]}}" selected>{{ items[1]}}</option>
+            {% endif %}
+            <option name="{{items[0]}}" value="{{items[1]}}" >{{ items[1]}}</option>
+        {% endfor %}
+     </select>
+    </td><td>
+<input type="submit"></td></tr>
+</table>
+</form>
+<p>You have selected : {{ selected_movies }}</p>
+<p> The Similar Movies are </p>
+{{ rec_movies |safe }}
+</center>
+</body>
+</html>
