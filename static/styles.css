@@ -10,8 +10,9 @@ h2 {
 
 select
 {
-    color: blue;
-    font-size: 13px; 
+    color: blueviolet;
+    font-size: 12px;
+    width: 250;
 }
 
 tr{
@@ -22,7 +23,8 @@ tr{
 {
     border: 1px ;
     border-color: black;
-    text-decoration-color: blue;
     font-size: 14px;
     color: rgb(53, 4, 34); 
+    width: 300;
+    background-color:floralwhite
 }

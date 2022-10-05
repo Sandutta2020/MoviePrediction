@@ -45,7 +45,7 @@ async def render(request: Request, category_id: str = Form(...),movie_id: str = 
             "movies": Genre,
             "movie_list": movie_list,
             "rec_movies": df_movies.head(movie_config['Result_size']).to_html(
-                border=1, index=False,table_id="result_movies"
+                border=1,index=False, header=False,table_id="result_movies"
             ),
         },
     )

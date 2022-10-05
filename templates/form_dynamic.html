@@ -9,8 +9,8 @@
 <body>
 <center><h2> Similar Movie Prediction </h2>
 <form action="/render" method="post" >
-<table id="List_movies"> <tr> <th>
-	<label for="Movie_choice">Genre :</label> </th>
+<table id="List_movies"> <tr> <td>
+	<label for="Genre_choice">Genre :</label> </td>
     <td>
      <select class="form-control" id ="category_id" name="category_id">   
         {% for movie in movies%}
@@ -20,7 +20,12 @@
                 <option name="{{movie}}" value="{{movie}}">{{ movie}}</option>
         {% endfor %}
      </select>
-     <br>
+    </td>
+    <td></td></tr>
+    <tr><td>
+        <label for="Movie_choice">Movie :</label> </td>
+        <td>
+
      <select class="form-control" id ="movie_id" name="movie_id">   
         {% for items in movie_list%}
             {% if selected_movies==items[1] %}
@@ -30,7 +35,7 @@
         {% endfor %}
      </select>
     </td><td>
-<input type="submit"></td></tr>
+<input type="submit" value="Enter"></td></tr>
 </table>
 </form>
 <p>You have selected : {{ selected_movies }}</p>
