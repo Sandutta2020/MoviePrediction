@@ -7,6 +7,9 @@ h2 {
     color: blue;
     font-size: 13px; 
 }
+p{
+    font-weight: bold;
+}
 
 select
 {
