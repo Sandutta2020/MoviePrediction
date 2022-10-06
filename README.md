@@ -28,3 +28,7 @@ The matrix will be like
 when user select any movies we sort this based on similarity and return.
 
 ![ScreenShot](https://github.com/Sandutta2020/MoviePrediction/blob/master/static/Front_Page.JPG)
+
+after clicking the Enter:
+
+![ScreenShot](https://github.com/Sandutta2020/MoviePrediction/blob/master/static/Result_Page.JPG)

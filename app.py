@@ -34,7 +34,7 @@ async def render(request: Request, category_id: str = Form(...),movie_id: str = 
     df_movies = getting_recommended_movie(movie_id)
     df_movies.reset_index(inplace=True)
     df_movies['Similar Movies'] =df_movies['Title'] + '--------- ' + df_movies['SearchType']
-    df_movies=df_movies[['Similar Movies']]
+    #df_movies=df_movies[['Similar Movies']]
     #print(df_movies.to_html())
     return templates.TemplateResponse(
         "form_dynamic.html",
@@ -44,6 +44,7 @@ async def render(request: Request, category_id: str = Form(...),movie_id: str = 
             "selected_movies" :movie_id,
             "movies": Genre,
             "movie_list": movie_list,
+            "movies_df":df_movies,
             "rec_movies": df_movies.head(movie_config['Result_size']).to_html(
                 border=1,index=False, header=False,table_id="result_movies"
             ),
