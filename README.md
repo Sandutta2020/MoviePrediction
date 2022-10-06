@@ -27,6 +27,4 @@ The matrix will be like
 
 when user select any movies we sort this based on similarity and return.
 
-<div align="center">
-    <img src="/static/Front_Page.JPG" width="400px"</img> 
-</div>
+![ScreenShot](https://github.com/Sandutta2020/MoviePrediction/blob/master/static/Front_Page.JPG)
