@@ -28,5 +28,5 @@ The matrix will be like
 when user select any movies we sort this based on similarity and return.
 
 <div align="center">
-    <img src="/static/Front_Page.jpg" width="400px"</img> 
+    <img src="/static/Front_Page.JPG" width="400px"</img> 
 </div>
